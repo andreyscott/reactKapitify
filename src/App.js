@@ -1,4 +1,4 @@
-import { useEffect, React } from 'react';
+import React, { useEffect } from 'react';
 import Header from './components/header/Header';
 import {
   BrowserRouter as Router,
@@ -9,8 +9,10 @@ import {
 import { useDispatch, useSelector } from "react-redux";
 import { login, logout, selectUser } from "./features/userSlice";
 import { auth } from "./firebase/firebase";
+import { Fade } from "react-awesome-reveal";
 import SignupScreen from "./pages/signUp-page/SignUpPage";
 import LoginScreen from "./pages/login-page/Login";
+import MenuPage from "./pages/menuPage/MenuPage"
 import './App.css';
 
 function App() {
@@ -37,7 +39,7 @@ function App() {
   }, [dispatch]);
 
   return (
-    <div>
+    <div className="app">
     <Router>
     <Switch>
       <Route exact path="/">
@@ -55,6 +57,8 @@ function App() {
         ) : (
           <>
             <Header menuPage />
+            <MenuPage />
+
           </>
         )}
       </Route>
