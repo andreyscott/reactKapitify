@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import GreenlandLogoImg from "../../assets/images/logo.png";
+import Kapitify from "../../assets/images/logo.jpg";
 
 const LogoWrapper = styled.div`
   display: flex;
@@ -8,8 +8,8 @@ const LogoWrapper = styled.div`
 `;
 
 const LogoImg = styled.div`
-  width: 29px;
-  height: 29px;
+  width: 59px;
+  height: 39px;
 
   img {
     width: 100%;
@@ -29,9 +29,9 @@ export function Logo(props) {
   return (
     <LogoWrapper>
       <LogoImg>
-        <img src={GreenlandLogoImg} alt="Greenland logo" />
+        <img src={Kapitify} alt="Greenland logo" />
       </LogoImg>
-      <LogoText>Greenland</LogoText>
+      <LogoText>The Best</LogoText>
     </LogoWrapper>
   );
 }

@@ -7,13 +7,13 @@ function Footer() {
             <section className="footer">
       <div className="link-row">
         <div className="address-column">
-          <h3>Company Name</h3>
-          <p>832 South Olive Street <br/>Los Angeles, California 90014</p>
+          <h3>Kapitify</h3>
+          <p>somewhere in uniben <br/>Benin city, Edo state 90014</p>
         </div>
         <div className="link-column">
           <ul>
             <li><span>Explore</span></li>
-            <li><a href="/websites">Websites</a></li>
+            <li><a href="www.andrewirorere.tech">Websites</a></li>
             <li><a href="/email">Examples</a></li>
             <li><a href="/status">Pricing</a></li>
             <li><a href="/security">Security</a></li>
@@ -45,10 +45,10 @@ function Footer() {
           <p>&copy; 2020 Some Company, Inc. All rights reserved.</p>
         </div>
         <div class="social-column">
-          <a href="your-instagram" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://www.instagram.com/andrayscott/" target="_blank" rel="noopener noreferrer">Instagram</a>
           <a href="your-twitter" target="_blank" rel="noopener noreferrer">Twitter</a>
           <a
-            href="your-facebook-account"
+            href="https://web.facebook.com/andrey.king.188"
             target="_blank"
             rel="noopener noreferrer"
             >Facebook</a>
