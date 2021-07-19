@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 import { Navbar } from './components/navbar';
 import ImgSlider from './components/slider/Img-slider';
+import How from './components/howItWorks/how'
 import Footer from './footer/Footer';
 
 
@@ -10,7 +11,7 @@ function App() {
       <div className='app'>
      <Navbar />
      <ImgSlider />
-     <h3>some body text will go here</h3>
+     <How />
       <Footer />
   
       </div>
