@@ -42,7 +42,7 @@ function Footer() {
       </div>
       <div class="social-row">
         <div class="copyright-column">
-          <p>&copy; 2020 Some Company, Inc. All rights reserved.</p>
+          <p>&copy; 2021 andreyscott, Inc. All rights reserved.</p>
         </div>
         <div class="social-column">
           <a href="https://www.instagram.com/andrayscott/" target="_blank" rel="noopener noreferrer">Instagram</a>
