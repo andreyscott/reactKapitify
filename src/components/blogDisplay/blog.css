@@ -1,0 +1,53 @@
+#from-our-blog .card-img-top {
+  height: 250px;
+  object-fit: cover;
+}
+
+#from-our-blog .badge-primary {
+  margin-bottom: 1em;
+}
+
+#from-our-blog .card-body {
+  padding-top: 0.75em;
+}
+
+.section-spacer {
+  padding: 75px 0;
+}
+
+bg-very__gray {
+  background-color: #fafafa;
+}
+
+.container {
+  max-width: 1100px;
+  width: 100%;
+  padding-right: 20px;
+  padding-left: 20px;
+  margin-right: auto;
+  margin-left: auto;
+  box-sizing: border-box;
+  padding-left: 20px;
+}
+
+.section-header {
+  margin-bottom: 1rem;
+  padding-right: 10px;
+  padding-left: 10px;
+  text-align: center;
+}
+
+.lead {
+  font-weight: 400;
+  line-height: 29px;
+}
+
+.section-title {
+  font-family: Rubik, sans-serif;
+}
+
+@media (max-width: 768px) {
+  .section-spacer {
+    padding: 80px 0;
+  }
+}
