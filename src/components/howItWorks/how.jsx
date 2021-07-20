@@ -29,7 +29,7 @@ function How() {
                         </div>
                         <div className="feature-card__body">
                             <p>
-                                Create a free account and login to Selar.
+                                Create a free account and login to kapitify.
                             </p>
                         </div>
                     </div>

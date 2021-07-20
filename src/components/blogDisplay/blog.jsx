@@ -1,4 +1,5 @@
 import React from 'react';
+import './blog.css'
 
 function blog() {
     return (
@@ -13,7 +14,7 @@ function blog() {
         </p>
     </header>
     <div className="row" id="home-blog-post-thumbnails">
-        <div id="loading" className="loading">
+        <div id="loading" className="loading hidden">
             <div className="ripple ripple1"></div>
             <div className="ripple ripple2"></div>
             <div className="ripple ripple3"></div>
@@ -21,7 +22,7 @@ function blog() {
         </div>
     </div>
 
-    <div class="mt-40 text-center"><a href="https://selar.co/blog?utm_source=Selar&amp;utm_medium=MainSite&amp;utm_campaign=HomeBodySection" class="btn btn-primary btn-lg">See more posts</a>
+    <div class="mt-40 text-center"><a href="https://andrewirorere.tech" class="btn btn-primary btn-lg">See now more posts</a>
 </div>
 </div>
 </section>      
