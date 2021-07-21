@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 import styled from "styled-components";
 
 const AccessibilityContainer = styled.div`
@@ -54,7 +55,9 @@ const LoginButton = styled.button`
 export function Accessibility(props) {
   return (
     <AccessibilityContainer>
-      <RegisterButton>Register</RegisterButton>
+    <Link to='/test'>
+    <RegisterButton>Register</RegisterButton>
+    </Link>
       <LoginButton>Login</LoginButton>
     </AccessibilityContainer>
   );

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link,  } from 'react-router-dom';
 import { useMediaQuery } from "react-responsive";
 import styled from "styled-components";
 import { Logo } from "../logo";
@@ -37,7 +38,9 @@ export function Navbar(props) {
   return (
     <NavbarContainer>
       <LeftSection>
-        <Logo />
+      <Link to='/'>
+      <Logo />
+      </Link>
       </LeftSection>
       <MiddleSection>{!isMobile && <NavLinks />}</MiddleSection>
       <RightSection>

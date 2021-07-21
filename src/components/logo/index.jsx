@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import Kapitify from "../../assets/images/logo.jpg";
 
@@ -23,14 +24,17 @@ const LogoText = styled.h2`
   margin-left: 4px;
   color: #222;
   font-weight: 500;
+  text-decoration: none !important;
 `;
 
 export function Logo(props) {
   return (
     <LogoWrapper>
-      <LogoImg>
+    <Link to='/'>
+    <LogoImg>
         <img src={Kapitify} alt="Greenland logo" />
       </LogoImg>
+    </Link>
       <LogoText>The Best</LogoText>
     </LogoWrapper>
   );

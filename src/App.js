@@ -1,23 +1,22 @@
 import React from 'react';
-import './App.css';
-import { Navbar } from './components/navbar';
-import ImgSlider from './components/slider/Img-slider';
-import How from './components/howItWorks/how';
-import Blog from './components/blogDisplay/blog'
-import Footer from './footer/Footer';
+import { Switch, Route } from 'react-router-dom';
+import { Navbar } from './components/navbar/index';
+import HomePage from './pages/home-page/Homepage';
+import SignUp from './pages/sign-up/SignUp'
 
+import './App.css';
 
 function App() {
     return (
-      <div className='app'>
-     <Navbar />
-     <ImgSlider />
-     <How />
-     <Blog />
-      <Footer />
+      <div>
+      <Navbar />
+     <Switch>
+       <Route exact path='/' component={HomePage} />
+       <Route path ='/test' component={SignUp} />
+     </Switch>
   
       </div>
-  )
+  );
 }
 
 export default App;
