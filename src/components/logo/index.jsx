@@ -9,8 +9,8 @@ const LogoWrapper = styled.div`
 `;
 
 const LogoImg = styled.div`
-  width: 59px;
-  height: 39px;
+  width: 150px;
+  height: 55px;
 
   img {
     width: 100%;
@@ -35,7 +35,6 @@ export function Logo(props) {
         <img src={Kapitify} alt="Greenland logo" />
       </LogoImg>
     </Link>
-      <LogoText>The Best</LogoText>
     </LogoWrapper>
   );
 }
