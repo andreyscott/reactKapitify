@@ -1,11 +1,68 @@
- import React from 'react';
- import './sign-up.css';
- 
- function SignUp() {
-     return (
-         <div className="content">
-             <div className="container">
-        <div className="row  align-items-center">
+import React from 'react';
+
+import FormInput from '../../components/form-input/Form-input';
+import CustomButton from '../../components/custom-buttons/Custom-button';
+
+import {auth, createUserProfileDocument } from '../../data/firebase.Utils';
+
+import './sign-in.scss';
+import './sign-up.css'
+class SignUp extends React.Component {
+    constructor() {
+      super();
+  
+      this.state = {
+        displayName: '',
+        email: '',
+        password: '',
+        confirmPassword: ''
+      };
+    }
+  
+    handleSubmit = async event => {
+      event.preventDefault();
+  
+      const { displayName, email, password, confirmPassword } = this.state;
+  
+      if (password !== confirmPassword) {
+        alert("passwords don't match");
+        return;
+      }
+  
+      try {
+        const { user } = await auth.createUserWithEmailAndPassword(
+          email,
+          password
+        );
+  
+        await createUserProfileDocument(user, { displayName });
+  
+        this.setState({
+          displayName: '',
+          email: '',
+          password: '',
+          confirmPassword: ''
+        });
+      } catch (error) {
+        console.error(error);
+      }
+    };
+  
+    handleChange = event => {
+      const { name, value } = event.target;
+  
+      this.setState({ [name]: value });
+    };
+  
+    render() {
+      const { displayName, email, password, confirmPassword } = this.state;
+      return (
+          <div className='content'>
+              <div className='container'>
+                 <div className="row  align-items-center">
+
+
+                
             <div className="col-sm-6">
                 
                 <div className="feature-list-wrapper">
@@ -37,17 +94,83 @@
                     </ul>
                 </div>
             </div>
-            <div className="col-sm-6">
+
+           
+
+
+                 <div className='sign-up'>
+
+                 <div class="">
                 
-                <div className="m-10px text-center text-uppercase form-group">
+                <div class="m-10px text-center text-uppercase form-group">
     <strong>Continue with social media</strong>
 </div>
-                    </div>
-                 </div> 
-            </div> 
-         </div>
-     )
- }
- 
- export default SignUp;
- 
+
+<div class="social-btn-container ">
+    <a href="" className="social-btn social-google-btn w-50 form-group">
+        <div className="icon-wrapper"><i className="icon ion-logo-google"></i></div>
+        <span className="btn-text">google</span>
+    </a>
+    <a href="" className="social-btn social-twitter-btn w-50 form-group">
+        <div className="icon-wrapper"><i className="icon ion-logo-twitter"></i></div>
+        <span className="btn-text">twitter</span>
+    </a>
+    <a href="" className="social-btn social-facebook-btn w-50 form-group">
+        <div className="icon-wrapper"><i className="icon ion-logo-facebook"></i></div>
+        <span className="btn-text">facebook</span>
+    </a>
+    
+</div>                
+
+          <h2 className='title'>Don't have an account?</h2>
+          <span>Sign up with your email and password</span>
+          <form className='sign-up-form' onSubmit={this.handleSubmit}>
+            <FormInput
+              type='text'
+              name='displayName'
+              value={displayName}
+              onChange={this.handleChange}
+              label='Display Name'
+              required
+            />
+            <FormInput
+              type='email'
+              name='email'
+              value={email}
+              onChange={this.handleChange}
+              label='Email'
+              required
+            />
+            <FormInput
+              type='password'
+              name='password'
+              value={password}
+              onChange={this.handleChange}
+              label='Password'
+              required
+            />
+            <FormInput
+              type='password'
+              name='confirmPassword'
+              value={confirmPassword}
+              onChange={this.handleChange}
+              label='Confirm Password'
+              required
+            />
+            <CustomButton type='submit'>SIGN UP</CustomButton>
+          </form>
+        </div>
+        </div>
+
+        
+          </div>
+
+                 </div>
+                 </div>
+              
+      
+      );
+    }
+  }
+  
+  export default SignUp;
