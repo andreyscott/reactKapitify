@@ -2,6 +2,8 @@ import React from 'react';
 
 import FormInput from '../../components/form-input/Form-input';
 import CustomButton from '../../components/custom-buttons/Custom-button';
+import FacebookIcon from '@material-ui/icons/Facebook';
+import TwitterIcon from '@material-ui/icons/Twitter';
 
 import {auth, createUserProfileDocument } from '../../data/firebase.Utils';
 
@@ -102,7 +104,7 @@ class SignUp extends React.Component {
 
                  <div class="">
                 
-                <div class="m-10px text-center text-uppercase form-group">
+                <div class=" text-center text-uppercase">
     <strong>Continue with social media</strong>
 </div>
 
@@ -112,11 +114,11 @@ class SignUp extends React.Component {
         <span className="btn-text">google</span>
     </a>
     <a href="" className="social-btn social-twitter-btn w-50 form-group">
-        <div className="icon-wrapper"><i className="icon ion-logo-twitter"></i></div>
+        <div className="icon-wrapper"><i className="icon ion-logo-twitter"><TwitterIcon /></i></div>
         <span className="btn-text">twitter</span>
     </a>
     <a href="" className="social-btn social-facebook-btn w-50 form-group">
-        <div className="icon-wrapper"><i className="icon ion-logo-facebook"></i></div>
+        <div className="icon-wrapper"><i className="icon ion-logo-facebook"><FacebookIcon /></i></div>
         <span className="btn-text">facebook</span>
     </a>
     

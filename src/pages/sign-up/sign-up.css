@@ -142,15 +142,18 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
 }
 strong {
   text-align: center;
   text-transform: uppercase;
+  text-align: center !important;
+  justify-content: center;
+  align-items: center;
+  padding-left: 2rem;
 }
 
 .social-btn {
-  margin-top: 0.5rem;
+  margin-top: 0.8rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
