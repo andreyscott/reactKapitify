@@ -1,11 +1,11 @@
 import React from 'react';
-import SignIn from '../../components/sign-in/sign-in'
+import SignIn from '../../components/sign-in/sign-in';
 
-const signIn = () => {
-    <div className="">
-        <h1>hello</h1>
+
+const SignI = () => {
+    <div className="test">
         <SignIn />
     </div>
 }
 
-export default signIn;
+export default SignI;
