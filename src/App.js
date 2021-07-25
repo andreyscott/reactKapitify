@@ -1,28 +1,29 @@
 import React from 'react';
-import { Switch, Route } from 'react-router-dom';
+import { Route, Switch } from 'react-router';
 import { Navbar } from './components/navbar/index';
 import HomePage from './pages/home-page/Homepage';
 import SignUp from './pages/sign-up/SignUp';
-import SignI from './pages/sign-in/Sign-In'
+import SignIn from "./pages/sign-in/LogIn";
 
 
-import './App.css';
 
 function App() {
     return (
-      <div>
-      <Navbar />
-     <Switch>
-       <Route exact path='/' component={HomePage} />
-       <Route path ='/test' component={SignUp}  />
-       <Route  exact path ='/logIn' component={SignI}  />
-
-       
-     </Switch>
-  
-      </div>
-  );
+        <div className="app">
+             <Navbar />
+             <Switch>
+                 <Route exact path='/'>
+                    <HomePage />
+                 </Route>
+                 <Route exact path='/test'>
+                    <SignUp />
+                 </Route>
+                 <Route exact path='/log'>
+                    <SignIn />
+                 </Route>
+             </Switch>
+        </div>
+    );
 }
 
 export default App;
-
