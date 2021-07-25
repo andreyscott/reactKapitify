@@ -46,13 +46,10 @@ class SignIn extends React.Component {
     render() {
       return (
         <div className='container'>
-        <div className=" align-items-center">
-            <div className=" col-sm-6">
+        <div className=" ">
+            <div className=" pad">
 
             <div className='ui-container ui-small'>
-        <div className="mb-50">
-            <h3>log in to Kapitify </h3>
-        </div>
      <div className="m-10px form-group">
     <strong>Continue with social media</strong>
 </div>
