@@ -58,7 +58,7 @@ export function Accessibility(props) {
     <Link to='/test'>
     <RegisterButton>Register</RegisterButton>
     </Link>
-    <Link to='/logIn'>
+    <Link to='/log'>
     <LoginButton>Login</LoginButton>
     </Link>
     </AccessibilityContainer>

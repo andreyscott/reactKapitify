@@ -1,10 +1,10 @@
 import React from 'react';
 
-import FormInput from '../form-input/Form-input';
+import FormInput from '../../components/form-input/Form-input';
 
-import CustomButton from '../custom-buttons/Custom-button';
+import CustomButton from '../../components/custom-buttons/Custom-button';
 
-import { auth, signInWithGoogle } from '../../data/firebase.Utils.js';
+import { auth, signInWithGoogle } from '../../data/firebase.Utils';
 
 import './Sign-in.css';
 
