@@ -4,13 +4,16 @@ import { Navbar } from './components/navbar/index';
 import HomePage from './pages/home-page/Homepage';
 import SignUp from './pages/sign-up/SignUp';
 import SignIn from "./pages/sign-in/LogIn";
+import Page from "./pages/temp";
+
+import './App.css';
 
 
 
 function App() {
     return (
         <div className="app">
-             <Navbar />
+              <Navbar />
              <Switch>
                  <Route exact path='/'>
                     <HomePage />
@@ -20,6 +23,9 @@ function App() {
                  </Route>
                  <Route exact path='/log'>
                     <SignIn />
+                 </Route>
+                 <Route exact path='/page'>
+                    <Page />
                  </Route>
              </Switch>
         </div>
