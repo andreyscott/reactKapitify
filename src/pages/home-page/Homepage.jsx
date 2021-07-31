@@ -1,16 +1,20 @@
 import React from 'react';
-import ImgSlider from '../../components/slider/Img-slider';
+import ImageSlider from '../../components/ImageSlider/index';
 import How from '../../components/howItWorks/how';
-import Blog from '../../components/blogDisplay/blog'
-import Footer from '../../components/footer/Footer';
+import Blog from '../../components/blogDisplay/blog';
+import Footer from '../../components/footer/Footer'
+
 
 function HomePage() {
     return (
         <div className="home">
-     <ImgSlider />
+        <div className='home_container'>
+        <ImageSlider />
      <How />
      <Blog />
       <Footer />
+
+        </div>
         </div>
     )
 }

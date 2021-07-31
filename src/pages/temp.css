@@ -1,12 +1,9 @@
 body {
   /* background: #1b1e2a; */
   background: #191b2a;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
-.home {
-  width: fit-content;
-  height: fit-content;
-}
-
 .home__container {
   margin: 0 auto;
   padding: 0 30px;
@@ -15,7 +12,7 @@ body {
   overflow-x: hidden;
 }
 .slick-list {
-  overflow: hidden;
+  overflow: unset;
 }
 @media (min-width: 992px) {
   body {
@@ -26,6 +23,8 @@ body {
   }
   .home {
     margin-top: 94px;
+    width: 100vh;
+    height: fit-content;
   }
   .home__container {
     padding: 0;

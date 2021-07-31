@@ -68,7 +68,7 @@ const Carousel = styled(Slider)`
   }
 
   .slick-list {
-    overflow: initial;
+    overflow: hidden;
   }
 
   .slick-prev {
