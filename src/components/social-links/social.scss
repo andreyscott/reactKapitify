@@ -1,0 +1,22 @@
+.separator {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5rem;
+
+  z-index: 1;
+}
+
+.separator,
+h2 {
+  padding: 0 2rem; /* creates the space */
+  text-align: center;
+  background: white;
+}
+
+.separator,
+.line {
+  flex: 1;
+  height: 2px;
+  background-color: #000;
+  z-index: -1;
+}
