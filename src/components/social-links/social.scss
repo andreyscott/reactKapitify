@@ -11,6 +11,8 @@ h2 {
   padding: 0 2rem; /* creates the space */
   text-align: center;
   background: white;
+  font-size: 15px;
+  font-weight: 150;
 }
 
 .separator,
@@ -19,4 +21,13 @@ h2 {
   height: 2px;
   background-color: #000;
   z-index: -1;
+}
+
+.social-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.9rem;
+  padding: 10px 20px;
+  background: white;
 }

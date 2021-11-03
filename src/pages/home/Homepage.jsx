@@ -1,11 +1,13 @@
 import React from 'react';
-// import ImageSlider from '../../components/ImageSlider/index';
+import Navbar from '../../components/Navbar/Navbar';
 
 
 function HomePage() {
     return (
         <div className="home">
-        <h1>Home</h1>
+            <Navbar />
+        <h1>Homer</h1>
+    
         </div>
     )
 }

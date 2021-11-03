@@ -1,14 +1,31 @@
-.sign-in {
-  width: 380px;
+.input_box {
   display: flex;
+  display: grid;
   flex-direction: column;
-  box-sizing: border-box;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  box-shadow: 0px 0px 19px 5px rgba(0, 0, 0, 0.19);
+}
 
-  .title {
-    margin: 10px 0;
+.left {
+  background: no-repeat center;
+  background-size: cover;
+  z-index: 1;
+  height: 90vh;
+  width: 50vw;
+}
+.right {
+  padding: 25px 40px;
+}
+
+@media screen and (max-width: 880px) {
+  .input-box {
+    grid-template-columns: 1fr !important;
   }
-  .button {
-    display: flex;
-    justify-content: space-between;
+  img {
+    height: 200px;
   }
 }
