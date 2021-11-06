@@ -15,9 +15,8 @@ import { auth } from "../../firebase";
 import { login } from "../../features/userSlice";
 import FormSubmit from "../../components/form-submit/formSubmit";
 import Social from "../../components/social-links/social";
-// import Navbar from "../../components/NavbarC/Navbar";
-import logo from '../../assets/images/logo.svg'
-
+import logo from '../../assets/images/Group7.svg';
+import image2 from '../../assets/images/image 3.svg';
 
 import './sign-in.scss'
 
@@ -44,6 +43,7 @@ function LoginScreen() {
   };
 
   return (
+    
     <div className="signIn">
       <div className="signIn__head">
         <Link to="/">
@@ -52,9 +52,9 @@ function LoginScreen() {
             alt="logo"
             style={{ width: "100px", height: "100px" }}
           />
-          {/* <Navbar/> */}
         </Link>
       </div>
+      <div className="signIn__container">
       <div className="signIn__center">
       <div className="signIn__info">
           <h1>Log In To kapitify </h1>
@@ -141,8 +141,19 @@ function LoginScreen() {
         {/* social buttons and icons */}
    <Social />
         </div>
+        
+        </div>
+        <div className="signIn__Image">
+        <img src={image2} style={{
+        width: '100%',
+        height: '59vh',
+        }}
+         alt="image2"/>
+      
+          </div>
       </div>
     </div>
+    
   );
 }
 
