@@ -15,11 +15,13 @@ import { auth } from "../../firebase";
 import { login } from "../../features/userSlice";
 import FormSubmit from "../../components/form-submit/formSubmit";
 import Social from "../../components/social-links/social";
+import logo from '../../assets/images/Group7.svg';
+import image2 from '../../assets/images/image 3.svg';
 
 import './sign-in.scss'
 
 function LoginScreen() {
-  const { register, handleSubmit, watch, errors } = useForm();
+  const { register, handleSubmit,  errors } = useForm();
 
   const [passwordShown, setPasswordShown] = useState(false);
   
@@ -41,20 +43,27 @@ function LoginScreen() {
   };
 
   return (
+    
     <div className="signIn">
       <div className="signIn__head">
         <Link to="/">
-          {/* <img
-            src="https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/Starbucks_Corporation_Logo_2011.svg/1200px-Starbucks_Corporation_Logo_2011.svg.png"
-            alt=""
-          /> */}
+          <img
+            src={logo}
+            alt="logo"
+            style={{ width: "100px", height: "100px" }}
+          />
         </Link>
       </div>
+      <div className="signIn__container">
       <div className="signIn__center">
       <div className="signIn__info">
           <h1>Log In To kapitify </h1>
           <h5>Don't have an account? <span>Create one for free</span></h5>
         </div>
+        <div className="left">
+
+        </div>
+        
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="signIn__inputContainera">
             <TextField
@@ -81,6 +90,7 @@ function LoginScreen() {
               </div>
             )}
           </div>
+       {/* adding spaces between the two input_box */}
           <div className="space">
 
           </div>
@@ -128,10 +138,22 @@ function LoginScreen() {
           <FormSubmit name="Sign in" type="submit" />
         </form>
         <div className="signIn__socials">
+        {/* social buttons and icons */}
    <Social />
         </div>
+        
+        </div>
+        <div className="signIn__Image">
+        <img src={image2} style={{
+        width: '100%',
+        height: '59vh',
+        }}
+         alt="image2"/>
+      
+          </div>
       </div>
     </div>
+    
   );
 }
 

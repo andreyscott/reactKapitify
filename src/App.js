@@ -48,7 +48,7 @@ useEffect(() => {
                  <Route exact path='/'>
                     <HomePage />
                  </Route>
-                 <Route exact path='/account/signup'>
+                 <Route exact path='/account/create'>
                     <SignUp />
                  </Route>
                  <Route exact path="/account/signin">
